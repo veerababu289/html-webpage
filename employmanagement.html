@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Modernsolutions</title>
+        <link rel="stylesheet" href="employ.css" />
+        <script type="text/javascript">
+            function check(event)
+            {
+              event.preventDefault();
+           var uname = document.getElementById("uname").value;
+           var pwd = document.getElementById("pwd").value;
+            var data = localStorage.getItem("details");
+            abc = JSON.parse(data);
+             flag = false;
+            for (i=0; i<abc.length; i++)
+            {
+               if (abc[i].uname1== uname) 
+               {
+                 if (abc[i].pwd21==pwd)
+                 {
+                  flag=true;
+                  break;
+                 }
+               }
+             }
+              if (flag==false)
+              {
+                alert('failed')
+              }
+              else
+              {
+                window.location="home.html";
+              }
+            }
+            //  if(uname==abc.uname1)
+            //  {
+            //     if (pwd==abc.pwd21)
+            //     {
+            //         window.location="home.html";  
+            //     }
+            //     else
+            //     {
+            //         alert("failed")
+            //     }
+            //  }
+
+            
+
+        </script>
+    </head>
+        <body background="logback.png">
+          <div class="topheader">
+            <div class="left">
+                Welcome!
+            </div>
+            <div class="right">
+                followus on linkedin.com/in/modernsolutions
+            </div>
+          </div>
+
+
+          <div class="header">
+            <div >
+                <img src="modernlogo.png" class="head1" />
+            </div>
+            <div class="head2">
+                ModernSolutions
+            </div>
+
+          </div>
+
+
+
+
+          <div class="bodypart">
+           <div class="body1">
+           <img src="softimg1.png" class="soft" />
+           </div>
+           <div class="body2" >
+            <form class="form1" id="form1" >   
+               <b>username</b> 
+                <input type="text" class="uname" id="uname" placeholder="username"  /> <br/> <br/>
+                <b>password</b>
+                <input type="password" class="pwd" id="pwd" placeholder="password" /> <br/> <br/> 
+                <leo><input type="submit" value="Login" onclick="check(event)" /></leo>
+            </form>
+            <div id="err" style="color:red ; text-align:center" ></div>
+
+           </div>
+          </div>
+        
+          <!-- onsubmit="return check()" -->
+
+
+          <div class="about">
+            <br/> <br/>
+            <h2>About</h2> <br/> <br/><br/>
+           <h5>Modernsolutions is one of the largest multinational IT service and consulting companies. <br/><br/>
+           It is headquartered in Mumbai, India, but has offices globally. <br/><br/>
+           Modernsolutions is well known in the e-governance, banking and financial services, <br/><br/>
+           telecommunications, education and healthcare markets. </h5><br/>
+          </div>
+
+
+
+          <div class="footer">
+          <div class="social">
+            <div class="soc">
+           <h2> Socialmedia links</h2> <br/> <br/>
+            <a href="#" >facebook </a><br/>
+            <a href="#" >twitter </a><br/>
+            <a href="#" >instragram </a><br/>
+            <a href="#" >Linkedin </a> </div>
+          </div>
+          <div class="requests">
+            <div class="req">
+            <h2>Submit your requets here</h2>
+           email <br/>
+           <input type="email" /> <br/>
+           Request <br/>
+           <textarea rows="6" cols="20"></textarea> <br/>
+           <input type="submit" value="Submit"  />
+          </div>
+         </div>
+        </body>
+</html>
+

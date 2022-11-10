@@ -1,0 +1,110 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.topheader{
+    height:35px;
+    width:100%;
+    background-color:grey;
+}
+.left{
+    float:left;
+    color:white;
+    padding: 5px;
+}
+.right{
+    float:right;
+    color:white;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+
+
+
+
+.header{
+    height:80px;
+    width:100%;
+    background-color: rgb(88, 148, 197);
+}
+.head1{
+    float:left;
+    height:60px;
+    width: 50px;
+    padding: 10px;
+}
+.head2{
+    float:left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size:30px;
+    padding:10px;
+    color:rgb(100, 200, 50);  
+}
+
+
+.register{
+    height:500px;
+    background-color: dimgrey;
+}
+.reg{
+    padding:20px;
+}
+
+
+
+
+
+
+
+
+
+
+.about{
+    height:300px;
+    width:100%;
+    background-color:lightblue;
+    text-align:center;
+}
+   
+.about h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+    
+
+
+.footer{
+    width:100%;
+    height:200px;
+    background-color:grey;
+}
+
+.social{
+height:200px;
+float:left;
+width:500px;
+}
+.soc{
+    margin:20px;
+}
+.soc a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.soc a:hover{
+    background-color:brown;
+}
+
+.requests{
+    height:200px;
+    float:right;
+    width:500px;
+    color:rgb(50, 90, 200);
+}
+.req{
+    margin: 10px;
+    font-size: 15px;
+}

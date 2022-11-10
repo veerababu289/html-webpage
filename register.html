@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Modernsolutions</title>
+        <link rel="stylesheet" href="register.css" />
+        <script type="text/javascript">
+            function check()
+            {
+                var uname = document.getElementById("uname").value;
+                var mobile= document.getElementById("mobile").value;
+                var email = document.getElementById("email").value;
+                var pwd2 = document.getElementById("pwd2").value;
+                var pwd3 = document.getElementById("pwd3").value;
+                if (mobile.length<10 || mobile.length>10 )
+                {
+                    alert("Incorrect mobile number");
+                }
+                else if(pwd2.length<8)
+                {
+                    alert("password must be 8 characters");
+                }
+                
+                else if(pwd2 !== pwd3)
+                {
+                    alert("password didn't matched");
+                }
+                else
+                {
+                  userdetails = {uname1:uname,mobile1:mobile,email1:email, pwd21:pwd2, pwd31:pwd3};
+                //    localStorage.setItem("details", JSON.stringify(userdetails));
+                //    window.location="employmanagement.html";
+                   let det = [];
+                   det.push(userdetails);
+                   localStorage.setItem("details", JSON.stringify(det))
+                   window.location="employmanagement.html";
+                }
+            }
+        </script>
+    </head>
+        <body>
+          <div class="topheader">
+            <div class="left">
+                Welcome!
+            </div>
+            <div class="right">
+                followus on linkedin.com/in/modernsolutions
+            </div>
+          </div>
+
+
+          <div class="header">
+            <div >
+                <img src="modernlogo.png" class="head1" />
+            </div>
+            <div class="head2">
+                ModernSolutions
+            </div>
+
+          </div>
+
+
+
+        <center>
+       <div class="register">
+        <div class="reg">
+        <h2>Fill your datails here</h2> <br/> <br/> <br/>
+        <form class="form2">
+            Name
+            <input type="text" placeholder="name" class="uname" id="uname" /> <br/> <br/>
+            Mobile Number
+            <input type="text" placeholder="mobile number" class="mobile" id="mobile" /> <br/> <br/>
+            E-mail
+            <input type="text" placeholder="email" class="email" id="email" /> <br/> <br/>
+            Password
+            <input type="password" placeholder="password" class="pwd2" id="pwd2" /> <br/> <br/>
+            Confirm Password
+            <input type="password" placeholder="confirm password" class="pwd3" id="pwd3" /> <br/><br/><br/>
+            <input type="button" value="submit" onclick="check()" />
+        </form></div>
+       </div>
+        </center>
+
+       <div class="about">
+        <br/> <br/>
+        <h2>About</h2> <br/> <br/><br/>
+       <h5>Modernsolutions is one of the largest multinational IT service and consulting companies. <br/><br/>
+       It is headquartered in Mumbai, India, but has offices globally. <br/><br/>
+       Modernsolutions is well known in the e-governance, banking and financial services, <br/><br/>
+       telecommunications, education and healthcare markets. </h5><br/>
+      </div>
+
+
+
+
+          <div class="footer">
+          <div class="social">
+            <div class="soc">
+           <h2> Socialmedia links</h2> <br/> <br/>
+            <a href="#" >facebook </a><br/>
+            <a href="#" >twitter </a><br/>
+            <a href="#" >instragram </a><br/>
+            <a href="#" >Linkedin </a> </div>
+          </div>
+          <div class="requests">
+            <div class="req">
+            <h2>Submit your requets here</h2>
+           email <br/>
+           <input type="email" /> <br/>
+           Request <br/>
+           <textarea rows="6" cols="20"></textarea> <br/>
+           <input type="submit" value="Submit" />
+          </div>
+         </div>
+        </body>
+</html>
+
